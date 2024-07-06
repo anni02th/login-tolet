@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function Login() {
   return (
@@ -30,22 +30,9 @@ export default function Login() {
             required
           />
         </div>
-        <div className="mb-4">
-          <label htmlFor="password" className="block font-semibold">
-            Confirm Password:
-          </label>
-          <input
-            type="password"
-            id="password"
-            name="pass2"
-            placeholder="Confirm Password"
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-Bpurple drop-shadow"
-            required
-          />
-        </div>
         <input
           type="submit"
-          value="Submit"
+          value="Login"
           className="w-[50%] bg-purple-500 text-white font-semibold text-xl py-1 px-4 m-4 rounded-3xl hover:bg-opacity-[90%] transition duration-100 self-center"
         />
       </form>
