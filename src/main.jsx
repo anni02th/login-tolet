@@ -4,6 +4,7 @@ import Login from './Login.jsx';
 import ForgetPassword from './ForgetPassword.jsx';
 import Register from './Register.jsx';
 import './index.css';
+import './styles.css'
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
@@ -22,12 +23,12 @@ function App() {
   };
 
   return (
-    <div className="h-full max-w-[20rem] m-auto flex flex-col justify-center items-center border-solid border-4 border-yellow-600 rounded-lg bg-blue-400">
+    <div className=" mx-auto my-[120px] rainbow">
       <h1 className="text-2xl p-4">Login</h1>
       {renderForm()}
       <div className="flex justify-between mb-4 w-[75%]">
-        <button onClick={() => setCurrentForm('forgetPassword')}>Forget Password?</button>
-        <button onClick={() => setCurrentForm('register')}>Register</button>
+        <button onClick={() => setCurrentForm('forgetPassword')} className=' hover:text-[#6cc1b6]'>Forget Password?</button>
+        <button onClick={() => setCurrentForm('register')} className=' hover:text-[#6cc1b6]' >Register</button>
       </div>
     </div>
   );
