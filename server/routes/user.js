@@ -63,14 +63,14 @@ router.post('/forgot-password', async (req, res) => {
       var transporter = nodemailer.createTransport({
          service: 'gmail',
          auth: {
-           user: 'dagamore1323@gmail.com',
-           pass: 'bvwifruyzqbpzwwm'
+           user: 'mail@gmail.com',
+           pass: ''
          }
        });
        
        
        var mailOptions = {
-         from: 'dagamore1323@gmail.com',
+         from: 'mail@gmail.com',
          to: email,
          subject: 'Reset Password...',
          text: `http://localhost:5173/resetPassword/${token}`
